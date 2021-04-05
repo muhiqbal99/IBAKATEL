@@ -1,0 +1,490 @@
+@startuml
+
+title __APP's Class Diagram__\n
+
+  namespace com.ta.iqbal.ibakatel {
+    class com.ta.iqbal.ibakatel.ActivityAdmin {
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    class com.ta.iqbal.ibakatel.ActivityUser {
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    class com.ta.iqbal.ibakatel.BuildConfig {
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    class com.ta.iqbal.ibakatel.DashboardFrag {
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    class com.ta.iqbal.ibakatel.Dashboard_User {
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    class com.ta.iqbal.ibakatel.Dashboard_admin {
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    class com.ta.iqbal.ibakatel.MainActivity {
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    class com.ta.iqbal.ibakatel.about {
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace dtbarang {
+      class com.ta.iqbal.ibakatel.dtbarang.ActivityBarangAdmin {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace dtbarang {
+      class com.ta.iqbal.ibakatel.dtbarang.ActivityBarangUser {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace dtbarang {
+      class com.ta.iqbal.ibakatel.dtbarang.Adapter {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace dtbarang {
+      class com.ta.iqbal.ibakatel.dtbarang.ApiClient {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace dtbarang {
+      interface com.ta.iqbal.ibakatel.dtbarang.ApiInterface {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace dtbarang {
+      class com.ta.iqbal.ibakatel.dtbarang.Barang {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace dtbarang {
+      class com.ta.iqbal.ibakatel.dtbarang.CustomFilter {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace dtbarang {
+      class com.ta.iqbal.ibakatel.dtbarang.DetailBarangUser {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace dtbarang {
+      class com.ta.iqbal.ibakatel.dtbarang.EditorActivity {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace identifikasi {
+      class com.ta.iqbal.ibakatel.identifikasi.MyApplication {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace identifikasi {
+      class com.ta.iqbal.ibakatel.identifikasi.ScanActivity {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace identifikasi {
+      class com.ta.iqbal.ibakatel.identifikasi.TicketResultActivity {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace identifikasi {
+      class com.ta.iqbal.ibakatel.identifikasi.TicketView {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace identifikasi {
+      class com.ta.iqbal.ibakatel.identifikasi.tes {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    class com.ta.iqbal.ibakatel.item {
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.ActivityLaporan {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.Adapter {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.ApiClient {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      interface com.ta.iqbal.ibakatel.laporan.ApiInterface {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.CustomFilter {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.EditorActivity {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.Laporan {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace login {
+      class com.ta.iqbal.ibakatel.login.AppController {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace login {
+      class com.ta.iqbal.ibakatel.login.Login {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace login {
+      class com.ta.iqbal.ibakatel.login.Register {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace login {
+      class com.ta.iqbal.ibakatel.login.Server {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.ActivityPinjam {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.ActivityPinjamUser {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.Adapter {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.ApiClient {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      interface com.ta.iqbal.ibakatel.pinjam.ApiInterface {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.CustomFilter {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.EditorActivity {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.EditorActivityUser {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.Pinjam {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace tes {
+      class com.ta.iqbal.ibakatel.tes.ActivityTes {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace tes {
+      class com.ta.iqbal.ibakatel.identifikasi.QRCodeScanActivity {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace tes {
+      class com.ta.iqbal.ibakatel.tes.ScanResultActivity {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace tutorial {
+      class com.ta.iqbal.ibakatel.tutorial.Company {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace tutorial {
+      class com.ta.iqbal.ibakatel.tutorial.CompanyViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace tutorial {
+      class com.ta.iqbal.ibakatel.tutorial.Product {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace tutorial {
+      class com.ta.iqbal.ibakatel.tutorial.ProductAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace tutorial {
+      class com.ta.iqbal.ibakatel.tutorial.ProductViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace tutorial {
+      class com.ta.iqbal.ibakatel.tutorial.tutorial {
+      }
+    }
+  }
+  
+
+  com.ta.iqbal.ibakatel.ActivityAdmin .up.|> android.view.View.OnClickListener
+  com.ta.iqbal.ibakatel.ActivityAdmin -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.ActivityUser .up.|> android.view.View.OnClickListener
+  com.ta.iqbal.ibakatel.ActivityUser -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.DashboardFrag -up-|> android.support.v4.app.Fragment
+  com.ta.iqbal.ibakatel.DashboardFrag o-- com.ta.iqbal.ibakatel.DashboardFrag.OnFragmentInteractionListener : mListener
+  com.ta.iqbal.ibakatel.Dashboard_User -up-|> android.support.v4.app.Fragment
+  com.ta.iqbal.ibakatel.Dashboard_User o-- com.ta.iqbal.ibakatel.Dashboard_User.OnFragmentInteractionListener : mListener
+  com.ta.iqbal.ibakatel.Dashboard_admin -up-|> android.support.v4.app.Fragment
+  com.ta.iqbal.ibakatel.Dashboard_admin o-- com.ta.iqbal.ibakatel.Dashboard_admin.OnFragmentInteractionListener : mListener
+  com.ta.iqbal.ibakatel.MainActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.about -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.dtbarang.ActivityBarangAdmin -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.dtbarang.ActivityBarangAdmin o-- com.ta.iqbal.ibakatel.dtbarang.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.dtbarang.ActivityBarangAdmin o-- com.ta.iqbal.ibakatel.dtbarang.Adapter.RecyclerViewClickListener : listener
+  com.ta.iqbal.ibakatel.dtbarang.ActivityBarangAdmin o-- com.ta.iqbal.ibakatel.dtbarang.Adapter : adapter
+  com.ta.iqbal.ibakatel.dtbarang.ActivityBarangUser -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.dtbarang.ActivityBarangUser o-- com.ta.iqbal.ibakatel.dtbarang.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.dtbarang.ActivityBarangUser o-- com.ta.iqbal.ibakatel.dtbarang.Adapter.RecyclerViewClickListener : listener
+  com.ta.iqbal.ibakatel.dtbarang.ActivityBarangUser o-- com.ta.iqbal.ibakatel.dtbarang.Adapter : adapter
+  com.ta.iqbal.ibakatel.dtbarang.Adapter .up.|> android.widget.Filterable
+  com.ta.iqbal.ibakatel.dtbarang.Adapter -up-|> android.support.v7.widget.RecyclerView.Adapter
+  com.ta.iqbal.ibakatel.dtbarang.Adapter o-- com.ta.iqbal.ibakatel.dtbarang.CustomFilter : filter
+  com.ta.iqbal.ibakatel.dtbarang.Adapter o-- com.ta.iqbal.ibakatel.dtbarang.Adapter.RecyclerViewClickListener : mListener
+  com.ta.iqbal.ibakatel.dtbarang.CustomFilter -up-|> android.widget.Filter
+  com.ta.iqbal.ibakatel.dtbarang.CustomFilter o-- com.ta.iqbal.ibakatel.dtbarang.Adapter : adapter
+  com.ta.iqbal.ibakatel.dtbarang.DetailBarangUser -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.dtbarang.EditorActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.dtbarang.EditorActivity o-- com.ta.iqbal.ibakatel.dtbarang.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.identifikasi.MyApplication -up-|> android.app.Application
+  com.ta.iqbal.ibakatel.identifikasi.ScanActivity .up.|> info.androidhive.barcode.BarcodeReader.BarcodeReaderListener
+  com.ta.iqbal.ibakatel.identifikasi.ScanActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.identifikasi.TicketResultActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.identifikasi.TicketResultActivity o-- com.ta.iqbal.ibakatel.identifikasi.TicketView : ticketView
+  com.ta.iqbal.ibakatel.identifikasi.TicketView -up-|> android.widget.LinearLayout
+  com.ta.iqbal.ibakatel.laporan.ActivityLaporan -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.laporan.ActivityLaporan o-- com.ta.iqbal.ibakatel.laporan.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.laporan.ActivityLaporan o-- com.ta.iqbal.ibakatel.laporan.Adapter.RecyclerViewClickListener : listener
+  com.ta.iqbal.ibakatel.laporan.ActivityLaporan o-- com.ta.iqbal.ibakatel.laporan.Adapter : adapter
+  com.ta.iqbal.ibakatel.laporan.Adapter .up.|> android.widget.Filterable
+  com.ta.iqbal.ibakatel.laporan.Adapter -up-|> android.support.v7.widget.RecyclerView.Adapter
+  com.ta.iqbal.ibakatel.laporan.Adapter o-- com.ta.iqbal.ibakatel.laporan.CustomFilter : filter
+  com.ta.iqbal.ibakatel.laporan.Adapter o-- com.ta.iqbal.ibakatel.laporan.Adapter.RecyclerViewClickListener : mListener
+  com.ta.iqbal.ibakatel.laporan.CustomFilter -up-|> android.widget.Filter
+  com.ta.iqbal.ibakatel.laporan.CustomFilter o-- com.ta.iqbal.ibakatel.laporan.Adapter : adapter
+  com.ta.iqbal.ibakatel.laporan.EditorActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.laporan.EditorActivity o-- com.ta.iqbal.ibakatel.laporan.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.login.AppController -up-|> android.app.Application
+  com.ta.iqbal.ibakatel.login.Login -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.login.Register -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjam -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjam o-- com.ta.iqbal.ibakatel.pinjam.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjam o-- com.ta.iqbal.ibakatel.pinjam.Adapter.RecyclerViewClickListener : listener
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjam o-- com.ta.iqbal.ibakatel.pinjam.Adapter : adapter
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjamUser -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjamUser o-- com.ta.iqbal.ibakatel.pinjam.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjamUser o-- com.ta.iqbal.ibakatel.pinjam.Adapter.RecyclerViewClickListener : listener
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjamUser o-- com.ta.iqbal.ibakatel.pinjam.Adapter : adapter
+  com.ta.iqbal.ibakatel.pinjam.Adapter .up.|> android.widget.Filterable
+  com.ta.iqbal.ibakatel.pinjam.Adapter -up-|> android.support.v7.widget.RecyclerView.Adapter
+  com.ta.iqbal.ibakatel.pinjam.Adapter o-- com.ta.iqbal.ibakatel.pinjam.CustomFilter : filter
+  com.ta.iqbal.ibakatel.pinjam.Adapter o-- com.ta.iqbal.ibakatel.pinjam.Adapter.RecyclerViewClickListener : mListener
+  com.ta.iqbal.ibakatel.pinjam.CustomFilter -up-|> android.widget.Filter
+  com.ta.iqbal.ibakatel.pinjam.CustomFilter o-- com.ta.iqbal.ibakatel.pinjam.Adapter : adapter
+  com.ta.iqbal.ibakatel.pinjam.EditorActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.pinjam.EditorActivity o-- com.ta.iqbal.ibakatel.pinjam.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.pinjam.EditorActivityUser -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.pinjam.EditorActivityUser o-- com.ta.iqbal.ibakatel.pinjam.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.tes.ActivityTes -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.identifikasi.QRCodeScanActivity .up.|> me.dm7.barcodescanner.zxing.ZXingScannerView.ResultHandler
+  com.ta.iqbal.ibakatel.identifikasi.QRCodeScanActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.tes.ScanResultActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.tutorial.Company -up-|> com.thoughtbot.expandablerecyclerview.models.ExpandableGroup
+  com.ta.iqbal.ibakatel.tutorial.CompanyViewHolder -up-|> com.thoughtbot.expandablerecyclerview.viewholders.GroupViewHolder
+  com.ta.iqbal.ibakatel.tutorial.Product .up.|> android.os.Parcelable
+  com.ta.iqbal.ibakatel.tutorial.ProductAdapter -up-|> com.thoughtbot.expandablerecyclerview.ExpandableRecyclerViewAdapter
+  com.ta.iqbal.ibakatel.tutorial.ProductViewHolder -up-|> com.thoughtbot.expandablerecyclerview.viewholders.ChildViewHolder
+  com.ta.iqbal.ibakatel.tutorial.tutorial -up-|> android.support.v7.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

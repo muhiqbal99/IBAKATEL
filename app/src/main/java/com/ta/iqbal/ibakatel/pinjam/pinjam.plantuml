@@ -1,0 +1,270 @@
+@startuml
+
+title __PINJAM's Class Diagram__\n
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.ActivityPinjam {
+          {static} + my_shared_preferences : String
+          {static} + session_status : String
+          ~ progressBar : ProgressBar
+          - layoutManager : LayoutManager
+          - pinjamList : List<Pinjam>
+          - recyclerView : RecyclerView
+          + getPinjam()
+          + onCreateOptionsMenu()
+          + onOptionsItemSelected()
+          # onCreate()
+          # onResume()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.ActivityPinjamUser {
+          ~ progressBar : ProgressBar
+          - layoutManager : LayoutManager
+          - pinjamList : List<Pinjam>
+          - recyclerView : RecyclerView
+          + getPinjam()
+          + onCreateOptionsMenu()
+          + onOptionsItemSelected()
+          # onCreate()
+          # onResume()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.Adapter {
+          ~ pinjam : List<Pinjam>
+          ~ pinjamFilter : List<Pinjam>
+          - context : Context
+          + Adapter()
+          + getFilter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.Adapter.MyViewHolder {
+          - mDate : TextView
+          - mGambar : CircleImageView
+          - mLove : ImageView
+          - mName : TextView
+          - mRowContainer : RelativeLayout
+          - mType : TextView
+          + MyViewHolder()
+          + onClick()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      interface com.ta.iqbal.ibakatel.pinjam.Adapter.RecyclerViewClickListener {
+          {abstract} + onRowClick()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.ApiClient {
+          {static} - BASE_URL : String
+          {static} - retrofit : Retrofit
+          {static} ~ getApiClient()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      interface com.ta.iqbal.ibakatel.pinjam.ApiInterface {
+          {abstract} + getPinjam()
+          {abstract} + hapusPinjam()
+          {abstract} + perbaruiPinjam()
+          {abstract} + tambahPinjam()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.CustomFilter {
+          ~ filterList : ArrayList<Pinjam>
+          + CustomFilter()
+          # performFiltering()
+          # publishResults()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.EditorActivity {
+          ~ date : OnDateSetListener
+          ~ date2 : OnDateSetListener
+          ~ myCalendar : Calendar
+          - action : Menu
+          - bitmap : Bitmap
+          - catatan : String
+          - gambar : String
+          - id : int
+          - mCatatan : EditText
+          - mFabChoosePic : FloatingActionButton
+          - mGambar : CircleImageView
+          - mNm_barang : EditText
+          - mNm_user : EditText
+          - mStatus : EditText
+          - mTgl_balik : EditText
+          - mTgl_pinjam : EditText
+          - nm_barang : String
+          - nm_user : String
+          - status : String
+          - tgl_balik : String
+          - tgl_pinjam : String
+          + getStringImage()
+          + onCreateOptionsMenu()
+          + onOptionsItemSelected()
+          # onActivityResult()
+          # onCreate()
+          ~ readMode()
+          - chooseFile()
+          - deleteData()
+          - editMode()
+          - postData()
+          - setDataFromIntentExtra()
+          - setTgl_balik()
+          - setTgl_pinjam()
+          - updateData()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.EditorActivityUser {
+          ~ date : OnDateSetListener
+          ~ date2 : OnDateSetListener
+          ~ myCalendar : Calendar
+          - action : Menu
+          - bitmap : Bitmap
+          - catatan : String
+          - gambar : String
+          - id : int
+          - mCatatan : EditText
+          - mFabChoosePic : FloatingActionButton
+          - mGambar : CircleImageView
+          - mNm_barang : EditText
+          - mNm_user : EditText
+          - mStatus : EditText
+          - mTgl_balik : EditText
+          - mTgl_pinjam : EditText
+          - nm_barang : String
+          - nm_user : String
+          - status : String
+          - tgl_balik : String
+          - tgl_pinjam : String
+          + getStringImage()
+          + onCreateOptionsMenu()
+          + onOptionsItemSelected()
+          # onActivityResult()
+          # onCreate()
+          ~ readMode()
+          - chooseFile()
+          - postData()
+          - setDataFromIntentExtra()
+          - setTgl_balik()
+          - setTgl_pinjam()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace pinjam {
+      class com.ta.iqbal.ibakatel.pinjam.Pinjam {
+          - catatan : String
+          - gambar : String
+          - id : int
+          - massage : String
+          - nm_barang : String
+          - nm_user : String
+          - status : String
+          - tgl_balik : String
+          - tgl_pinjam : String
+          - value : String
+          + getCatatan()
+          + getGambar()
+          + getId()
+          + getMassage()
+          + getNm_barang()
+          + getNm_user()
+          + getStatus()
+          + getTgl_balik()
+          + getTgl_pinjam()
+          + getValue()
+          + setCatatan()
+          + setGambar()
+          + setId()
+          + setMassage()
+          + setNm_barang()
+          + setNm_user()
+          + setStatus()
+          + setTgl_balik()
+          + setTgl_pinjam()
+          + setValue()
+      }
+    }
+  }
+  
+
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjam -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjam o-- com.ta.iqbal.ibakatel.pinjam.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjam o-- com.ta.iqbal.ibakatel.pinjam.Adapter.RecyclerViewClickListener : listener
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjam o-- com.ta.iqbal.ibakatel.pinjam.Adapter : adapter
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjamUser -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjamUser o-- com.ta.iqbal.ibakatel.pinjam.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjamUser o-- com.ta.iqbal.ibakatel.pinjam.Adapter.RecyclerViewClickListener : listener
+  com.ta.iqbal.ibakatel.pinjam.ActivityPinjamUser o-- com.ta.iqbal.ibakatel.pinjam.Adapter : adapter
+  com.ta.iqbal.ibakatel.pinjam.Adapter .up.|> android.widget.Filterable
+  com.ta.iqbal.ibakatel.pinjam.Adapter -up-|> android.support.v7.widget.RecyclerView.Adapter
+  com.ta.iqbal.ibakatel.pinjam.Adapter o-- com.ta.iqbal.ibakatel.pinjam.CustomFilter : filter
+  com.ta.iqbal.ibakatel.pinjam.Adapter o-- com.ta.iqbal.ibakatel.pinjam.Adapter.RecyclerViewClickListener : mListener
+  com.ta.iqbal.ibakatel.pinjam.Adapter +-down- com.ta.iqbal.ibakatel.pinjam.Adapter.MyViewHolder
+  com.ta.iqbal.ibakatel.pinjam.Adapter +-down- com.ta.iqbal.ibakatel.pinjam.Adapter.RecyclerViewClickListener
+  com.ta.iqbal.ibakatel.pinjam.Adapter.MyViewHolder .up.|> android.view.View.OnClickListener
+  com.ta.iqbal.ibakatel.pinjam.Adapter.MyViewHolder -up-|> android.support.v7.widget.RecyclerView.ViewHolder
+  com.ta.iqbal.ibakatel.pinjam.Adapter.MyViewHolder o-- com.ta.iqbal.ibakatel.pinjam.Adapter.RecyclerViewClickListener : mListener
+  com.ta.iqbal.ibakatel.pinjam.CustomFilter -up-|> android.widget.Filter
+  com.ta.iqbal.ibakatel.pinjam.CustomFilter o-- com.ta.iqbal.ibakatel.pinjam.Adapter : adapter
+  com.ta.iqbal.ibakatel.pinjam.EditorActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.pinjam.EditorActivity o-- com.ta.iqbal.ibakatel.pinjam.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.pinjam.EditorActivityUser -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.pinjam.EditorActivityUser o-- com.ta.iqbal.ibakatel.pinjam.ApiInterface : apiInterface
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

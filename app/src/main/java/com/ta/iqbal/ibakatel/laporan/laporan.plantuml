@@ -1,0 +1,223 @@
+@startuml
+
+title __LAPORAN's Class Diagram__\n
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.ActivityLaporan {
+          ~ progressBar : ProgressBar
+          {static} - PERMISSIONS_STORAGE : String[]
+          {static} - REQUEST_EXTERNAL_STORAGE : int
+          {static} - file_url : String
+          - laporanList : List<Laporan>
+          - layoutManager : LayoutManager
+          - recyclerView : RecyclerView
+          + getLaporan()
+          + onCreateOptionsMenu()
+          + onOptionsItemSelected()
+          {static} + verifyStoragePermissions()
+          # onCreate()
+          # onResume()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.ActivityLaporan.DownloadFileFromURL {
+          # doInBackground()
+          # onPostExecute()
+          # onPreExecute()
+          # onProgressUpdate()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.Adapter {
+          ~ laporan : List<Laporan>
+          ~ laporanFilter : List<Laporan>
+          - context : Context
+          + Adapter()
+          + getFilter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.Adapter.MyViewHolder {
+          - mDate : TextView
+          - mGambar : CircleImageView
+          - mLove : ImageView
+          - mName : TextView
+          - mRowContainer : RelativeLayout
+          - mType : TextView
+          + MyViewHolder()
+          + onClick()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      interface com.ta.iqbal.ibakatel.laporan.Adapter.RecyclerViewClickListener {
+          {abstract} + onRowClick()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.ApiClient {
+          {static} - BASE_URL : String
+          {static} - retrofit : Retrofit
+          {static} ~ getApiClient()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      interface com.ta.iqbal.ibakatel.laporan.ApiInterface {
+          {abstract} + getLaporan()
+          {abstract} + hapusLaporan()
+          {abstract} + perbaruiLaporan()
+          {abstract} + tambahLaporan()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.CustomFilter {
+          ~ filterList : ArrayList<Laporan>
+          + CustomFilter()
+          # performFiltering()
+          # publishResults()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.EditorActivity {
+          ~ date : OnDateSetListener
+          ~ date2 : OnDateSetListener
+          ~ myCalendar : Calendar
+          - action : Menu
+          - bitmap : Bitmap
+          - catatan : String
+          - gambar : String
+          - id : int
+          - mCatatan : EditText
+          - mFabChoosePic : FloatingActionButton
+          - mGambar : CircleImageView
+          - mNm_barang : EditText
+          - mNm_user : EditText
+          - mStatus : EditText
+          - mTgl_balik : EditText
+          - mTgl_pinjam : EditText
+          - nm_barang : String
+          - nm_user : String
+          - status : String
+          - tgl_balik : String
+          - tgl_pinjam : String
+          + getStringImage()
+          + onCreateOptionsMenu()
+          + onOptionsItemSelected()
+          # onActivityResult()
+          # onCreate()
+          ~ readMode()
+          - chooseFile()
+          - deleteData()
+          - editMode()
+          - postData()
+          - setDataFromIntentExtra()
+          - setTgl_balik()
+          - setTgl_pinjam()
+          - updateData()
+      }
+    }
+  }
+  
+
+  namespace com.ta.iqbal.ibakatel {
+    namespace laporan {
+      class com.ta.iqbal.ibakatel.laporan.Laporan {
+          - catatan : String
+          - gambar : String
+          - id : int
+          - massage : String
+          - nm_barang : String
+          - nm_user : String
+          - status : String
+          - tgl_balik : String
+          - tgl_pinjam : String
+          - value : String
+          + getCatatan()
+          + getGambar()
+          + getId()
+          + getMassage()
+          + getNm_barang()
+          + getNm_user()
+          + getStatus()
+          + getTgl_balik()
+          + getTgl_pinjam()
+          + getValue()
+          + setCatatan()
+          + setGambar()
+          + setId()
+          + setMassage()
+          + setNm_barang()
+          + setNm_user()
+          + setStatus()
+          + setTgl_balik()
+          + setTgl_pinjam()
+          + setValue()
+      }
+    }
+  }
+  
+
+  com.ta.iqbal.ibakatel.laporan.ActivityLaporan -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.laporan.ActivityLaporan o-- com.ta.iqbal.ibakatel.laporan.ApiInterface : apiInterface
+  com.ta.iqbal.ibakatel.laporan.ActivityLaporan o-- com.ta.iqbal.ibakatel.laporan.Adapter.RecyclerViewClickListener : listener
+  com.ta.iqbal.ibakatel.laporan.ActivityLaporan o-- com.ta.iqbal.ibakatel.laporan.Adapter : adapter
+  com.ta.iqbal.ibakatel.laporan.ActivityLaporan +-down- com.ta.iqbal.ibakatel.laporan.ActivityLaporan.DownloadFileFromURL
+  com.ta.iqbal.ibakatel.laporan.ActivityLaporan.DownloadFileFromURL -up-|> android.os.AsyncTask
+  com.ta.iqbal.ibakatel.laporan.Adapter .up.|> android.widget.Filterable
+  com.ta.iqbal.ibakatel.laporan.Adapter -up-|> android.support.v7.widget.RecyclerView.Adapter
+  com.ta.iqbal.ibakatel.laporan.Adapter o-- com.ta.iqbal.ibakatel.laporan.CustomFilter : filter
+  com.ta.iqbal.ibakatel.laporan.Adapter o-- com.ta.iqbal.ibakatel.laporan.Adapter.RecyclerViewClickListener : mListener
+  com.ta.iqbal.ibakatel.laporan.Adapter +-down- com.ta.iqbal.ibakatel.laporan.Adapter.MyViewHolder
+  com.ta.iqbal.ibakatel.laporan.Adapter +-down- com.ta.iqbal.ibakatel.laporan.Adapter.RecyclerViewClickListener
+  com.ta.iqbal.ibakatel.laporan.Adapter.MyViewHolder .up.|> android.view.View.OnClickListener
+  com.ta.iqbal.ibakatel.laporan.Adapter.MyViewHolder -up-|> android.support.v7.widget.RecyclerView.ViewHolder
+  com.ta.iqbal.ibakatel.laporan.Adapter.MyViewHolder o-- com.ta.iqbal.ibakatel.laporan.Adapter.RecyclerViewClickListener : mListener
+  com.ta.iqbal.ibakatel.laporan.CustomFilter -up-|> android.widget.Filter
+  com.ta.iqbal.ibakatel.laporan.CustomFilter o-- com.ta.iqbal.ibakatel.laporan.Adapter : adapter
+  com.ta.iqbal.ibakatel.laporan.EditorActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.ta.iqbal.ibakatel.laporan.EditorActivity o-- com.ta.iqbal.ibakatel.laporan.ApiInterface : apiInterface
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
